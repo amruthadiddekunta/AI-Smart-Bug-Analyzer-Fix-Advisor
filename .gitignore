@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Data (exclude raw data only if not required)
+data/raw/*
+!data/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Generated embeddings (only the obsolete file)
+src/embeddings.npy
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Duplicate/backup notebook
+notebooks/01_dataset_collection-Copy1.ipynb
+
+# Old duplicate vectorizer
+notebooks/vectorizer.pkl
+
+# Local application databases
+data/*.db
+src/data/*.db
+
+# Temporary Excel lock files
+~$*.xlsx
+~$*.xls
